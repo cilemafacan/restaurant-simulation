@@ -24,10 +24,22 @@ public class Restoran {
     }
     public void menuyuGoster()
     {   
-        System.out.println("----- MENÜ -----");
+        System.out.println("Menü:");
         for (Urun urun : menu) {
-            System.out.println(urun);
-        }
+            if (urun instanceof Yemek) {
+                Yemek yemek = (Yemek)urun;
+                System.out.println("Yemek Adı: " + yemek.ad);
+                System.out.println("Fiyat: " + yemek.fiyat);
+                System.out.println("Tür: " + yemek.tur);
+                System.out.println("----------------");
+            } else if (urun instanceof Icecek) {
+                Icecek icecek = (Icecek)urun;
+                System.out.println("İçecek Adı: " + icecek.ad);
+                System.out.println("Fiyat: " + icecek.fiyat);
+                System.out.println("Boyut: " + icecek.boy);
+                System.out.println("----------------");
+            }
+
     }
     public void rastgeleSiparislerOlustur(int sayi)
     {

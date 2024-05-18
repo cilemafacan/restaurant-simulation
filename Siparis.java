@@ -17,12 +17,19 @@ public class Siparis{
         this.musteri = musteri;
         this.tarih = tarih;
     }
-    public void siparisBilgisi(){
-        System.out.println("deneme");
+    public void siparisBilgisi()
+    {
+        System.out.println("Sipariş Bilgileri:");
+        System.out.println("Yemek: " + yemek.ad + " - " + yemek.fiyat);
+        System.out.println("İçecek: " + icecek.ad + " - " + icecek.fiyat);
+        System.out.println("Garson: " + garson.ad);
+        System.out.println("Müşteri: " + musteri.ad);
+        System.out.println("Zaman: " + tarih);
+        System.out.println("Siparis alındı.");
     }
 
     public void siparisYazdir(PrintWriter yazici)
     {
-        System.out.println("deneme2");
+    
     }
 }
