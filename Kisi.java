@@ -1,10 +1,10 @@
-public class Kisi {
-    String ad;
+public class Kisi { // Kisi class'ı oluşturuldu.
+    String ad;  // ad değişkeni tanımlandı.
 
-    public Kisi(String ad) {
+    public Kisi(String ad) {    // Kisi class'ının constructor'ı. ad parametresini alır.
         this.ad = ad;
     }
-    public String getAd() {
+    public String getAd() { // getAd methodu ad değişkeninin değerini döndürür.
         return ad;
     }
     

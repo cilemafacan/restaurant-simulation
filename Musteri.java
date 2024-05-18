@@ -1,11 +1,13 @@
-public class Musteri extends Kisi{
+import java.util.Date;
 
-    public Musteri(String ad) {
+public class Musteri extends Kisi{  // Musteri class'ı Kisi class'ından türetilmiştir.
+
+    public Musteri(String ad) { // Musteri class'ının constructor'ı. Ata sınıfın constructor'ını çağırır.
         super(ad);
     }
-    public Siparis siparisVer(Yemek yemek, Icecek icecek)
+    public Siparis siparisVer(Yemek yemek, Icecek icecek)   // siparisVer methodu yemek ve icecek parametrelerini alır ve Siparis class'ından bir nesne oluşturur.
     {
-        Siparis siparis = new Siparis(yemek, icecek);
-        return siparis;
+        Date tarih = new Date();    // tarih değişkenine şu anki zaman atandı.
+        return new Siparis(yemek, icecek, null, this, tarih);   // Siparis class'ından bir nesne oluşturuldu ve geri döndürüldü.
     }
 }
